@@ -1,0 +1,119 @@
+#tieude{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.navv{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: beige;
+    display: grid;
+    grid-template-columns:45% 55%;
+    border: 1px solid black;
+    padding:10px;
+    margin:5px;
+}
+.dieuhuong{
+    text-align: center;
+    justify-content: center;
+}
+.search{
+    margin-left: 50px;
+    float: right;
+}
+.bodychitiet{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+.chitiet{
+    margin: 5px;
+     border: 1px solid black;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.hinhsanpham{
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: beige;
+    margin: 20px;
+}
+.chitietsanpham{
+    
+    padding: 10px;
+    margin: 20px;
+}
+.tienich{
+    display: grid;
+    grid-template-rows: 30% 20% 50%;
+}
+.giohang{
+    display: grid;
+    grid-template-rows: 20% 70% 10%;
+    border: 1px solid black;
+}
+.giohanghead{
+    padding: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    background-color: beige;
+}
+.giohangbody{
+    display: flex;
+    padding: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+.hinhgiohang{
+    max-width: 80%;
+    height: auto;
+}
+.danhsachgiohang{
+    padding: 5px;
+    list-style-type: none;
+}
+.timkiem{
+    border: 1px solid black;
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: 40% 60%;
+}
+.timkiemhead{
+    background-color: beige;
+    border: 1px solid black;
+    margin: 5px;
+    padding:5px;
+}
+.timkiembody{
+    padding: 5px;
+    border: 1px solid black;
+    margin: 5px;
+}
+.chungloai{
+    padding:10px;
+    border: 1px solid black;
+    margin-top: 10px;
+    display:grid;
+    grid-template-rows: 20% 80%;
+}
+.chungloaihead{
+    background-color: beige;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+.danhsachchungloai{
+   list-style-type: none;
+   line-height: 50px;
+   border: 1px solid black;
+}
+.chitietbody{
+   background-color: bisque;
+}

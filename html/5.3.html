@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FT-HOME Shop - Layout Minh Họa</title>
+    
+    <link rel="stylesheet" href="/css/5.3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <style>
+        /* Định nghĩa hiệu ứng Hover cho card sản phẩm */
+        .product-area .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .product-area .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border-color: #0d6efd !important;
+        }
+
+        /* Thêm các định nghĩa CSS cơ bản cho bố cục 2 cột (sử dụng flexbox hoặc grid) và định dạng các khối*/
+        .main-content {
+            display: flex;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .product-area {
+            flex-grow: 1; /* Chiếm phần lớn không gian */
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+        .product-area .card {
+            width: 30%; /* Khoảng 3 sản phẩm/hàng */
+            margin: 10px 1.5%;
+        }
+        .sidebar {
+            width: 300px; /* Chiều rộng cố định cho sidebar */
+            padding: 10px;
+        }
+        .product-image {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+        }
+        #main-title {
+            text-align: center;
+            font-size: 2em;
+            padding: 15px 0;
+            background-color: #343a40;
+            color: white;
+        }
+        /* Đảm bảo Sidebar blocks có khoảng cách */
+        .shopping-cart, .sidebar-search, .categories {
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p id="main-title">FIT-HCMUESHOP</p>
+    <div class="navigation-wrapper">
+        <div class="nav-links">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Register</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="top-search">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="main-content">
+        <div class="product-area">
+            
+            <div class="card">
+                <div class="card-header">
+                    <h4><a class="product-link" href="/html/5.3.chitiet.html">IPad Pro M4</a></h4>
+                </div>
+                <div class="card-body">
+                    <img class="product-image" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQTVaEtPZqJF9Mikx1SDt3U5UfautsJ-MIp2M66SxsBHH93lcewFsnu7Qj0TvJA2ZnXVeu2PQnmFmHGY2tN9DLj5n51rxHRSxCwjC9gUvfwYTT4dFtWnvivjoe1" alt="IPad Pro M4">
+                </div>
+                <div class="card-footer text-muted">
+                    cost
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h4><a class="product-link" href="/html/5.3.chitiet.html">IPad Pro M4</a></h4>
+                </div>
+                <div class="card-body">
+                    <img class="product-image" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQTVaEtPZqJF9Mikx1SDt3U5UfautsJ-MIp2M66SxsBHH93lcewFsnu7Qj0TvJA2ZnXVeu2PQnmFmHGY2tN9DLj5n51rxHRSxCwjC9gUvfwYTT4dFtWnvivjoe1" alt="IPad Pro M4">
+                </div>
+                <div class="card-footer text-muted">
+                    cost
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4><a class="product-link" href="/html/5.3.chitiet.html">IPad Pro M4</a></h4>
+                </div>
+                <div class="card-body">
+                    <img class="product-image" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQTVaEtPZqJF9Mikx1SDt3U5UfautsJ-MIp2M66SxsBHH93lcewFsnu7Qj0TvJA2ZnXVeu2PQnmFmHGY2tN9DLj5n51rxHRSxCwjC9gUvfwYTT4dFtWnvivjoe1" alt="IPad Pro M4">
+                </div>
+                <div class="card-footer text-muted">
+                    cost
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4><a class="product-link" href="/html/5.3.chitiet.html">IPad Pro M4</a></h4>
+                </div>
+                <div class="card-body">
+                    <img class="product-image" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQTVaEtPZqJF9Mikx1SDt3U5UfautsJ-MIp2M66SxsBHH93lcewFsnu7Qj0TvJA2ZnXVeu2PQnmFmHGY2tN9DLj5n51rxHRSxCwjC9gUvfwYTT4dFtWnvivjoe1" alt="IPad Pro M4">
+                </div>
+                <div class="card-footer text-muted">
+                    cost
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4><a class="product-link" href="/html/5.3.chitiet.html">IPad Pro M4</a></h4>
+                </div>
+                <div class="card-body">
+                    <img class="product-image" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQTVaEtPZqJF9Mikx1SDt3U5UfautsJ-MIp2M66SxsBHH93lcewFsnu7Qj0TvJA2ZnXVeu2PQnmFmHGY2tN9DLj5n51rxHRSxCwjC9gUvfwYTT4dFtWnvivjoe1" alt="IPad Pro M4">
+                </div>
+                <div class="card-footer text-muted">
+                    cost
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4><a class="product-link" href="/html/5.3.chitiet.html">IPad Pro M4</a></h4>
+                </div>
+                <div class="card-body">
+                    <img class="product-image" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQTVaEtPZqJF9Mikx1SDt3U5UfautsJ-MIp2M66SxsBHH93lcewFsnu7Qj0TvJA2ZnXVeu2PQnmFmHGY2tN9DLj5n51rxHRSxCwjC9gUvfwYTT4dFtWnvivjoe1" alt="IPad Pro M4">
+                </div>
+                <div class="card-footer text-muted">
+                    cost
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4><a class="product-link" href="/html/5.3.chitiet.html">IPad Pro M4</a></h4>
+                </div>
+                <div class="card-body">
+                    <img class="product-image" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQTVaEtPZqJF9Mikx1SDt3U5UfautsJ-MIp2M66SxsBHH93lcewFsnu7Qj0TvJA2ZnXVeu2PQnmFmHGY2tN9DLj5n51rxHRSxCwjC9gUvfwYTT4dFtWnvivjoe1" alt="IPad Pro M4">
+                </div>
+                <div class="card-footer text-muted">
+                    cost
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4><a class="product-link" href="/html/5.3.chitiet.html">IPad Pro M4</a></h4>
+                </div>
+                <div class="card-body">
+                    <img class="product-image" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQTVaEtPZqJF9Mikx1SDt3U5UfautsJ-MIp2M66SxsBHH93lcewFsnu7Qj0TvJA2ZnXVeu2PQnmFmHGY2tN9DLj5n51rxHRSxCwjC9gUvfwYTT4dFtWnvivjoe1" alt="IPad Pro M4">
+                </div>
+                <div class="card-footer text-muted">
+                    cost
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <h4><a class="product-link" href="/html/5.3.chitiet.html">IPad Pro M4</a></h4>
+                </div>
+                <div class="card-body">
+                    <img class="product-image" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQTVaEtPZqJF9Mikx1SDt3U5UfautsJ-MIp2M66SxsBHH93lcewFsnu7Qj0TvJA2ZnXVeu2PQnmFmHGY2tN9DLj5n51rxHRSxCwjC9gUvfwYTT4dFtWnvivjoe1" alt="IPad Pro M4">
+                </div>
+                <div class="card-footer text-muted">
+                    cost
+                </div>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            
+            <div class="shopping-cart">
+                <div class="cart-header"><b>Shopping Cart</b></div>
+                <div class="cart-body">
+                    <img class="cart-icon" src="/html/pngtree-red-shopping-cart-icon-png-free-illustration-png-image_4480557.jpg" alt="Shopping Cart Icon">
+                    <div class="cart-details">
+                        <ul class="cart-list">
+                            <li>10</li>
+                            <li>5,000,000</li>
+                            <li><a href="#">View Cart</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-search">
+                <div class="search-header"><b>Search</b></div>
+                <div class="search-body">
+                    <nav class="navbar bg-body-tertiary">
+                        <div class="container-fluid">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            
+            <div class="categories">
+                <div class="categories-header"><b>Categories</b></div>
+                <div class="categories-body"> 
+                    <ul class="categories-list">
+                        <li><a hreflang="#">Phones</a></li>
+                        <li><a hreflang="#">Laptops</a></li>
+                        <li><a hreflang="#">Tablets</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span>FIT-HCMUE</span>
+    </footer>
+</body>
+</html>

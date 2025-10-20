@@ -1,0 +1,193 @@
+#main-title {
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.navigation-wrapper {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: beige;
+    display: grid;
+    /* Chia làm 2 cột: 60% cho links, 40% cho search */
+    grid-template-columns: 60% 40%;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+
+.nav-links {
+    text-align: center;
+    justify-content: center;
+}
+
+.top-search {
+    margin-left: 50px;
+    float: right;
+}
+
+.main-content {
+    margin: 20px;
+    display: grid;
+    /* Định nghĩa bố cục 2 cột chính (Sản phẩm và Tiện ích) */
+    grid-template-columns: 900px auto; 
+    gap: 90px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+.product-area {
+    display: grid;
+    margin: 5px;
+    /* 3 cột sản phẩm bằng nhau */
+    grid-template-columns: 33% 33% 33%;
+    /* Bố cục ban đầu có vẻ là 3 hàng 3 cột, tôi giữ nguyên tỷ lệ */
+    grid-auto-flow: row; 
+    padding: 4px;
+    align-items: center;
+    gap: 2px;
+    background-color: beige;
+}
+
+/* Định nghĩa chung cho Card sản phẩm */
+.card {
+    display: grid;
+    /* 3 hàng: Header (20%), Body (60%), Footer (20%) */
+    grid-template-rows: 20% 60% 20%;
+    align-items: center;
+    border: 1px solid black;
+    /* Hiệu ứng Hover đã được thêm vào đây */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    border-color: #0d6efd !important; 
+}
+
+.card-header {
+    padding: 5px;
+    /* Giữ nguyên tên chuẩn Bootstrap */
+}
+
+.card-body {
+    align-items: center;
+    align-content: center;
+    /* Giữ nguyên tên chuẩn Bootstrap */
+}
+
+.card-footer {
+    padding: 10px;
+    font-size: larger;
+    /* Giữ nguyên tên chuẩn Bootstrap */
+}
+
+.product-image {
+    max-width: 80%;
+    height: auto;
+    align-items: center;
+    align-content: center;
+    margin-left: 24px;
+}
+
+.sidebar {
+    display: grid;
+    /* 3 khối tiện ích: Giỏ hàng (30%), Tìm kiếm (20%), Chủng loại (50%) */
+    grid-template-rows: 30% 20% 50%;
+}
+
+.shopping-cart {
+    display: grid;
+    /* Cấu trúc nội dung giỏ hàng */
+    grid-template-rows: 20% 70% 10%; 
+    border: 1px solid black;
+}
+
+.cart-header {
+    padding: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+    background-color: beige;
+}
+
+.cart-body {
+    display: flex;
+    padding: 5px;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
+.cart-icon {
+    max-width: 80%;
+    height: auto;
+}
+
+.cart-details {
+    padding: 5px;
+    list-style-type: none;
+}
+
+.sidebar-search {
+    border: 1px solid black;
+    margin-top: 10px;
+    display: grid;
+    /* 2 hàng: Header (40%), Body (60%) */
+    grid-template-rows: 40% 60%; 
+}
+
+.search-header {
+    background-color: beige;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.search-body {
+    padding: 5px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.categories {
+    padding: 10px;
+    border: 1px solid black;
+    margin-top: 10px;
+    display: grid;
+    /* 2 hàng: Header (20%), Body (80%) */
+    grid-template-rows: 20% 80%; 
+}
+
+.categories-header {
+    background-color: beige;
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
+.categories-list {
+    list-style-type: none;
+    line-height: 50px;
+    border: 1px solid black;
+}
+
+footer {
+    align-content: center;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.product-link {
+    color: black;
+    text-decoration: none;
+}
